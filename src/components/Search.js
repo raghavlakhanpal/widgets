@@ -33,7 +33,7 @@ const Search = () => {
         clearTimeout(timeOutId);
       };
     }
-  }, [searchValue]);
+  }, [resultValue.length, searchValue]);
 
   //function to create a list of results fetched
   const renderedResults = resultValue.map((result) => {
